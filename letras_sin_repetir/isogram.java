@@ -2,9 +2,7 @@ package letras_sin_repetir;
 
 public class isogram {
     public static boolean isIsogram(String str) {
-        String[] split= str.split(" ");
-        
-        if (str.equals("")) return true;
+        String[] split= str.toLowerCase().split(" ");
 
         for (String s :split) {
             for (int i=0; i < s.length(); i++) {
